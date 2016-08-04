@@ -1,28 +1,21 @@
-# monitoring-api
+# Example code for integration of MeterPU and monitoring-api
 
-> API clients to showcase the RESTful API of the monitoring framework
+> Written in C++ and CUDA
 
 
 ## Summary
 
-This module includes a minimal API written in C to register with the
-monitoring server, and then send metric data for a given user, application, and
-experiment ID. A full documentation of the RESTful API of the monitoring
-server can be found in the respective Github repository.
-
+This module includes a minimal example to illustrate the usage of MeterPU to get power samples
+and get visualized by ATOM monitoring frameworks. It interfaces with monitoring-api.
 
 ## Prerequisites
 
-The monitoring API requires first a running server and database. In order to
-install these requirements, please checkout the associated [monitoring server][server], first. Please note that the installation and setup steps mentioned below assume
-that you are running a current Linux as operating system. We have tested the
-monitoring API with Ubuntu 15.10.
+This example requires CUDA GPUs with energy counter, CUDA 7 or higher, CUDA TDK 5.319.85 or higher, and gcc 4.8.2 or higher.
 
 Before you can proceed, please clone the repository:
 
 ```bash
-git clone git://github.com/excess-project/monitoring-api.git
-```
+git clone https://github.com/excess-project/monitoring-api-with-meterpu-example.git
 
 
 ### Dependencies

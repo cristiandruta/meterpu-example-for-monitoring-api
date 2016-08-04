@@ -14,19 +14,3 @@
 #  limitations under the License.
 #
 
-# CURL
-CURL=curl
-CURL_BASE_URL=http://curl.haxx.se/download
-CURL_VERSION=7.37.0
-
-# Download and install CURL
-wget ${CURL_BASE_URL}/${CURL}-${CURL_VERSION}.tar.gz
-tar zxvf ${CURL}-${CURL_VERSION}.tar.gz
-cd ${CURL}-${CURL_VERSION}
-./configure --prefix=`pwd`/../bin/curl
-make && make install
-cd ..
-
-# Clean-up
-rm ${CURL}-${CURL_VERSION}.tar.gz
-rm -rf ${CURL}-${CURL_VERSION}
