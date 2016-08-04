@@ -30,4 +30,4 @@ if [ ! -f ${NVIDIA_GDK} ]; then
     exit 1;
 fi
 chmod +x ${NVIDIA_GDK}
-./${NVIDIA_GDK} --silent --installdir=.
+./${NVIDIA_GDK} --silent --installdir=`realpath .`
