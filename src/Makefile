@@ -1,7 +1,7 @@
 
 
 main: mf_api.o mf_publisher.o main.o
-	nvcc -o $@ $^ -lm -L../monitoring-api/bin/curl/lib/ -lcurl -L/home/lu/Documents/Software/Nvidia/NVML/tdk_5.319.85/NVML -lnvidia-ml  -lpthread -L/usr/local/cuda/lib64 -lcuda -lcudart
+	nvcc -o $@ $^ -lm -L../monitoring-api/bin/curl/lib/ -lcurl  -L../nvidia_gdk/usr/src/gdk/nvml/lib/ -lnvidia-ml -lcuda -lcudart -lpthread 
 
 mf_api.o:../monitoring-api/src/mf_api.c
 	g++ -c $^
