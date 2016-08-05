@@ -58,9 +58,9 @@ $ open url http://mf.excess-project.eu:3000/ to get the visualized data.
 
 ## Project Structure
 
-The compiled monitoring API library is found in the folder `lib`. A simple example
-of how to use the library is found in the `test` folder. The corresponding
-binary is called `test_mf_api`.
+A simple example
+of how to integrate MeterPU with ATOM monitoring framework is found in the `src` folder. The corresponding
+source file is called `main.cu`.
 
 
 ## Acknowledgment
