@@ -22,9 +22,10 @@ git clone https://github.com/excess-project/monitoring-api-with-meterpu-example.
 
 This project requires the following dependencies to be installed:
 
-| Component         | Homepage                    | Version   |
-|------------------ |---------------------------  |---------  |
-| curl              | http://curl.haxx.se/        | >= 7.37   |
+   | Component          | Homepage                                                                                           | Version   | 
+   | ------------------ | -------------------------------------------------------------------------------------------------- | --------- | 
+   | monitoring-api     | http://curl.haxx.se/                                                                               | >= 16.6   | 
+   | Nvidia GDK or TDK  | http://developer.download.nvidia.com//compute/cuda/7.5/Prod/gdk/gdk_linux_amd64_352_55_release.run | >= 352.55 | 
 
 
 To ease the process of setting up a development environment, we provide a basic
@@ -39,7 +40,7 @@ Executing the following script
 ./setup.sh
 ```
 
-results in a new directory named `bin`, which holds the required dependencies
+results in a new directory named monitoring-api and nvidia_gdk, which holds the required dependencies
 for compiling the project.
 
 
@@ -48,8 +49,10 @@ for compiling the project.
 This section assumes that you've successfully installed all required dependencies as described in the previous paragraphs.
 
 ```bash
+$ cd src
 $ make
-$ make install
+$ make run
+$ open url http://mf.excess-project.eu:3000/ to get the visualized data.
 ```
 
 
@@ -74,19 +77,19 @@ Please [create](https://github.com/excess-project/monitoring-api/website/issues)
 
 ## Main Contributors
 
-**Dennis Hoppe, HLRS**
+**Dennis Hoppe, HLRS, Lu Li, LIU**
 + [github/hopped](https://github.com/hopped)
 
 
 ## Release History
 
-| Date        | Version | Comment          |
-| ----------- | ------- | ---------------- |
-| 2016-04-20  | 16.2    | Public release.  |
+ | Date        | Version | Comment          | 
+ | ----------- | ------- | ---------------- | 
+ | 2016-08-5   | 1.0     | Public release.  | 
 
 
 ## License
-Copyright (C) 2016 University of Stuttgart
+Copyright (C) 2016 University of Stuttgart, University of Linköping University
 
 [Apache License v2](LICENSE).
 
