@@ -27,7 +27,8 @@ set_up_monitoring_api()
 #set up Nvidia GDK
 set_up_nvidia_gdk()
 {
-	GDK_PATH="./nvidia_gdk"
+	BASE_DIR=`pwd`
+	GDK_PATH=${BASE_DIR}/nvidia_gdk
 	mkdir -p $GDK_PATH
 	cd $GDK_PATH
 	NVIDIA_BASE_URL="http://developer.download.nvidia.com"
@@ -38,7 +39,7 @@ set_up_nvidia_gdk()
 		exit 1;
 	fi
 	chmod +x ${NVIDIA_GDK}
-	./${NVIDIA_GDK} --silent --installdir=`realpath .`
+	./${NVIDIA_GDK} --silent --installdir=${GDK_PATH}
 }
 
 
