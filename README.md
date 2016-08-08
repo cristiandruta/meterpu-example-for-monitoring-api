@@ -22,10 +22,10 @@ git clone https://github.com/excess-project/monitoring-api-with-meterpu-example.
 
 This project requires the following dependencies to be installed:
 
-   | Component          | Homepage                                                                                           | Version   | 
-   | ------------------ | -------------------------------------------------------------------------------------------------- | --------- | 
-   | monitoring-api     | http://curl.haxx.se/                                                                               | >= 16.6   | 
-   | Nvidia GDK or TDK  | http://developer.download.nvidia.com//compute/cuda/7.5/Prod/gdk/gdk_linux_amd64_352_55_release.run | >= 352.55 | 
+| Component          | Homepage              | Version   |
+| ------------------ | --------------------- | --------- |
+| monitoring-api     | http://curl.haxx.se/  | >= 16.6   |
+| Nvidia GDK or TDK  | http://developer.download.nvidia.com/compute/cuda/7.5/Prod/gdk/gdk_linux_amd64_352_55_release.run | >= 352.55 | 
 
 
 To ease the process of setting up a development environment, we provide a basic
@@ -83,15 +83,16 @@ Please [create](https://github.com/excess-project/monitoring-api/website/issues)
 
 ## Release History
 
- | Date        | Version | Comment          | 
- | ----------- | ------- | ---------------- | 
- | 2016-08-5   | 1.0     | Public release.  | 
+| Date        | Version | Comment          |
+| ----------- | ------- | ---------------- |
+| 2016-08-5   | 1.0     | Public release.  | 
 
 
 ## License
 Copyright (C) 2016 University of Stuttgart, University of Linköping University
 
 [Apache License v2](LICENSE).
+
 
 [server]: https://github.com/excess-project/monitoring-server
 [excess]: http://www.excess-project.eu
