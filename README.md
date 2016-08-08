@@ -16,7 +16,7 @@ Before you can proceed, please clone the repository:
 
 ```bash
 git clone https://github.com/excess-project/monitoring-api-with-meterpu-example.git
-
+```
 
 ### Dependencies
 
